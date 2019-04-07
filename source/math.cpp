@@ -20,7 +20,7 @@ int floor_aufgabe(float num) {
   * Proves if a number is prime or not
   */
 bool is_prime(unsigned int num) {
-  for(int i = 2; i < num; ++i) {
+  for(unsigned int i = 2; i < num; ++i) {
     if (num % i == 0) return false; 
   }
   return num > 1;
@@ -64,4 +64,26 @@ void print_100_primes() {
     }
     ++num;
   }
+}
+
+/*
+ * Finds the next bigger prime number
+ */
+int next_prime(int num) {
+  int res = num;
+  do {
+    res++;
+  } while(!is_prime(res));
+  return res;
+}
+
+/*
+ * Finds the smallest prime number into which the argument is divisible
+ */
+int get_smallest_prime_divisor(int num) {
+  int res = 2;
+  while(num % res > 0) {
+    res = next_prime(res);
+  }
+  return res;
 }
