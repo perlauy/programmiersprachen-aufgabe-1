@@ -4,7 +4,7 @@ add_executable(aufgabe_1_4 aufgabe_1_4.cpp)
 
 #target_link_libraries(helloworld my_own_library)
 
-add_executable(tests tests.cpp)
+add_executable(tests tests.cpp math.cpp)
 
 
 # Kommentieren Sie die folgenden Zeilen fuer die Aufgabe `mile_to_kilometer` aus
