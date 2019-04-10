@@ -45,11 +45,11 @@ Object of class `istream` that represents the standard input stream (standard C+
 
 
 #### <<
-Operator "put to" (insertion): writes the second argument into the first. For example:
-```std::cout << "Hello, World!\n";```
+Operator "put to" (insertion): writes the second argument into the first. In output stream, it inserts data to the console from a variable or directly as a stream. For example:
+```std::cout << "Hello, " << name << "." << std::endl;```
 
 #### >>
-Extraction operator.
+Extraction operator. In an input stream, it parses the stream so it can be interpreted as the right type and stored into the given variable (n, in the following example).
 
 Example:
 ```
@@ -140,7 +140,7 @@ class Circle {
 It defines a set of possible values and what operations can be performed on a certain object.
 
 #### Typkonvertierung
-It is the process of converting data of a predifned type into another. It can be implicit (done by the compiler without the developer's intervention, e.g. when using different types in an expression) or explicit (called casting, it forces an expression to a specific type).
+It is the process of converting data of a predefined type into another. It can be implicit (done by the compiler without the developer's intervention, e.g. when using different types in an expression) or explicit (called casting, it forces an expression to a specific type).
 
 #### Variable
 A named object (some memory that holds a value of some type).
