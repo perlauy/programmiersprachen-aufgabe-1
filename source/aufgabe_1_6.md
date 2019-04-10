@@ -7,7 +7,7 @@ For example, for a variable:
 extern int my_variable;
 ```
 
-This allows the compiler to proceed, letting it know the variable exists, but with no need to provide further details. When linking, this information will need to be available. The keyword **extern** allows us to declare the variable in any place (and multiple times), while defining it in another file, for example (it must be defined only once in a certain scope).
+This allows the compiler to proceed, letting it know the variable exists, but with no need to provide further details. When linking, this information will need to be available. The keyword **extern** allows us to declare the variable in any place (and multiple times), while defining it in another file for example (but it must be defined only once for its scope).
 
 For a **function**, a declaration is the determination of the signature.
 ```
