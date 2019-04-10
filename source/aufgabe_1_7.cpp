@@ -1,7 +1,7 @@
 #include <iostream>
 
 int var = 3;
-// var wird für das ganze Programm gültig. Deren value wird 3, sobald es nicht neu zugewissen wird.
+// var wird für das ganze Programm gültig (global). Deren value wird 3, sobald es nicht neu zugewissen wird.
 
 double sum(double a, double b) 
   // Signatur dieser Funktion. Es inkludiert der Typ des return value ("double"), und die Argumente und ihren Typen (zwei Argumenten mit Typ "double"). Es könnte auch zusätzliche Information über die Verfügbarkeit der Funktion inkludieren ("public", "static") und "excepions"

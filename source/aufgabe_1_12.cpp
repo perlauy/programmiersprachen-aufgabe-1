@@ -13,16 +13,16 @@ float cylinder_area(float radius, float height) {
 
 TEST_CASE (" cylinder_volume ", "[cylinder_volume]")
 {
-  REQUIRE(cylinder_volume(2.0, 5.0) == Approx(62.83185307179586476925286766559));
-  REQUIRE(cylinder_volume(1.0, 1.0) == Approx(3.1415926535897932384626433832795));
-  REQUIRE(cylinder_volume(2.5, 3.25) == Approx(63.813600776042675156272443722865));
+  REQUIRE(cylinder_volume(2.0f, 5.0f) == Approx(62.83185307179586476925286766559f));
+  REQUIRE(cylinder_volume(1.0f, 1.0f) == Approx(3.1415926535897932384626433832795f));
+  REQUIRE(cylinder_volume(2.5f, 3.25f) == Approx(63.813600776042675156272443722865f));
 }
 
 TEST_CASE (" cylinder_area ", "[cylinder_area]")
 {
-  REQUIRE(cylinder_area(2.0, 5.0) == Approx(62.83185307179586476925286766559));
-  REQUIRE(cylinder_area(1.0, 1.0) == Approx(6.283185307179586476925286766559));
-  REQUIRE(cylinder_area(2.5, 3.25) == Approx(51.050880620834140125017954978292));
+  REQUIRE(cylinder_area(2.0f, 5.0f) == Approx(62.83185307179586476925286766559f));
+  REQUIRE(cylinder_area(1.0f, 1.0f) == Approx(6.283185307179586476925286766559f));
+  REQUIRE(cylinder_area(2.5f, 3.25f) == Approx(51.050880620834140125017954978292f));
 }
 
 int main (int argc , char * argv []) {
